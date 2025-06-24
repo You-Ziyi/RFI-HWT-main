@@ -1,0 +1,19 @@
+# RFDL
+
+
+
+## **Usage of RFI-masking programme**
+
+
+
+This is an auxiliary programe for "rfifind (PRESTO)" to mask rfi. Usage should be like:
+
+
+_"**python   rfi-mask.py   -file   Fitsfile   -time x   -sigma x
+
+###### parameters above include:
+**-time**  Seconds to integrate for the I polarization data. For single Fitsfile of FAST (in 6.4 sec) it should be longer than 0.05 sec. 
+
+**-sigma** Threshold to flag the rfi-comtaminated data. 0.1~1 is fine for most cases.
+
+if no -time or -sigma, it will use the default parameters (time=0.5 sec, sigma=0.5).
